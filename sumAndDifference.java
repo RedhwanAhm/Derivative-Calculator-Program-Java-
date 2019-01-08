@@ -14,7 +14,7 @@ public class sumAndDifference //Sets up values.
     gate = 0;
     for (int i = 0; i < x.length(); i++) //Breaking up the String and placing it within an ArrayList.
     {
-      if ((x.charAt(i) == ('+') || x.charAt(i) == ('+')) || i == x.length()-1) 
+      if ((x.charAt(i) == ('+') || x.charAt(i) == ('-')) || i == x.length()-1) 
       {
         conc.add(x.substring(lastIndex, i));
         lastIndex = i;
@@ -86,7 +86,7 @@ public class sumAndDifference //Sets up values.
   {
     for (int i = 0; i < concFinal.size(); i++)
     {
-      a += concFinal.get(i)+" ";
+      a += concFinal.get(i);
     }
     return a;
   }

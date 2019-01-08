@@ -2,8 +2,6 @@ import java.io.*;
 import static java.lang.System.*;
 
 import java.util.Scanner;
-import java.lang.Math;
-import java.util.ArrayList;
 import java.util.*;
 
 class ap_Calculus{
@@ -50,11 +48,12 @@ class ap_Calculus{
     
     else if (rule.equals("qr"))
     {
-      System.out.println("\nTo differentiate, type in this format: '(nx^n+nx^n...)/(nx^n+nx^n...)' ");
+      System.out.println("\nTo differentiate, type in this format: '(nx^n+nx^n [Top function])(nx^n+nx^n [Bottom function])' ex. 3x^5+2x^2 / 5x^5+x^2 = (3x^5+2x^2)(5x^5+x^2)");
       String diff4 = scan.nextLine();
-      quotientRule s = new quotientRule(diff4);
+      quotientRule s = new quotientRule (diff4);
       System.out.println("Answer: "+s);
     }
+    
     
     else
     {
